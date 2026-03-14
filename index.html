@@ -107,7 +107,8 @@
                 <a href="#about" class="nav-link hover:text-blue-400 transition-colors">01. About</a>
                 <a href="#skills" class="nav-link hover:text-blue-400 transition-colors">02. Stack</a>
                 <a href="#experience" class="nav-link hover:text-blue-400 transition-colors">03. Career</a>
-                <a href="#contact" class="px-4 py-2 border border-blue-500/50 rounded text-blue-400 hover:bg-blue-500/10 transition-all">04. Ping</a>
+                <a href="#projects" class="nav-link hover:text-blue-400 transition-colors">04. Projects</a>
+                <a href="#contact" class="px-4 py-2 border border-blue-500/50 rounded text-blue-400 hover:bg-blue-500/10 transition-all">05. Ping</a>
             </div>
             <button class="md:hidden text-2xl" onclick="toggleMenu()">
                 <i class="fas fa-bars"></i>
@@ -130,8 +131,8 @@
                 <a href="#experience" class="px-8 py-3 bg-blue-600 hover:bg-blue-500 text-white rounded font-semibold transition-all">
                     View Experience
                 </a>
-                <a href="#contact" class="px-8 py-3 border border-slate-700 hover:bg-slate-800 text-slate-300 rounded font-semibold transition-all">
-                    Get in Touch
+                <a href="#projects" class="px-8 py-3 border border-slate-700 hover:bg-slate-800 text-slate-300 rounded font-semibold transition-all">
+                    View Projects
                 </a>
             </div>
         </div>
@@ -252,6 +253,42 @@
                     <h3 class="text-2xl font-bold">Software Engineer</h3>
                     <p class="text-orange-400 mb-2">dbMotion • 2019 - 2021</p>
                     <p class="text-slate-400 leading-relaxed">Engineered healthcare interoperability solutions to streamline clinical data exchange between diverse health systems. Improved data processing reliability for critical medical records management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-24 px-6 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 flex items-center">
+                <span class="mono text-blue-500 mr-4">04.</span> Flagship Projects
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Docker Compose to Mermaid -->
+                <div class="glass-card p-8 rounded-xl flex flex-col h-full">
+                    <div class="flex justify-between items-start mb-6">
+                        <i class="fas fa-project-diagram text-4xl text-blue-400"></i>
+                        <a href="https://github.com/TamirTapiro/docker-compose-to-mermaid" target="_blank" class="text-slate-400 hover:text-white transition-colors">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Docker Compose to Mermaid</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
+                        A utility to automatically generate Mermaid.js infrastructure diagrams from Docker Compose files. Streamlines documentation by visualizing container dependencies, networks, and service relationships directly from source.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mono text-[10px] uppercase font-semibold text-blue-400">
+                        <span>Node.js</span>
+                        <span class="text-slate-600">•</span>
+                        <span>Docker</span>
+                        <span class="text-slate-600">•</span>
+                        <span>Mermaid.js</span>
+                    </div>
+                </div>
+                
+                <!-- Placeholder for future projects -->
+                <div class="border-2 border-dashed border-slate-800 p-8 rounded-xl flex items-center justify-center opacity-40">
+                    <span class="mono text-sm text-slate-500">More to come...</span>
                 </div>
             </div>
         </div>
