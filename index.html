@@ -314,7 +314,7 @@
                     
                     <div class="mt-auto">
                         <div class="flex items-center space-x-2 mb-4">
-                            <div class="bg-red-500/10 text-red-400 border border-red-500/20 px-3 py-1.5 rounded text-[11px] mono font-bold flex items-center">
+                            <div id="npm-badge" class="bg-red-500/10 text-red-400 border border-red-500/20 px-3 py-1.5 rounded text-[11px] mono font-bold flex items-center">
                                 <i class="fab fa-npm mr-2 text-lg"></i>
                                 <span id="npm-download-count" class="mr-1.5">...</span> downloads / week
                             </div>
@@ -415,10 +415,10 @@
                 if (data && data.downloads) {
                     countElement.innerText = data.downloads.toLocaleString();
                 } else {
-                    countElement.innerText = '95';
+                    document.getElementById('npm-badge').style.display = 'none';
                 }
             } catch (error) {
-                countElement.innerText = '95';
+                document.getElementById('npm-badge').style.display = 'none';
             }
         }
 
